@@ -3,6 +3,7 @@
 # NAME:        Evelyn Jiang
 # EMAIL:       jianger@uci.edu
 # STUDENT ID:  63947706
+# used Google, Youtube, ChatGPT for help
 
 import pymc as pm
 import numpy as np
