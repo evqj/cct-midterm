@@ -1,1 +1,5 @@
-# cct-midterm
+This project applies the Cultural Consensus Theory (CCT) model using PyMC to analyze a dataset of local plant knowledge.
+
+Informant competence (𝐷𝑖) is modeled with a Beta prior, scaled between 0.5 and 1, ensuring that all informants possess at least a baseline level of knowledge. Consensus answers (𝑍𝑗) are assigned a Bernoulli(0.5) prior, reflecting an initial assumption of no bias toward either answer. The likelihood function is defined using Bernoulli distributions, linking observed responses to both competence and consensus parameters. MCMC sampling is employed to estimate posterior distributions, with convergence assessed via R-hat statistics.
+
+The results provide estimates for individual informant competence as well as the consensus answers. Comparisons with simple majority voting reveal discrepancies in estimated consensus answers, likely due to the CCT model’s ability to account for variations in informant competence. By weighting responses from more knowledgeable informants more heavily, the CCT model offers a nuanced perspective on cultural knowledge that extends beyond a straightforward majority vote.
